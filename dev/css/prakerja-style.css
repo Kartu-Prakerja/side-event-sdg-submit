@@ -13563,7 +13563,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .header-fixed {
   position: fixed;
   z-index: 999;
-  background-color: white;
+  background: white;
   top: 0;
   left: 0;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(214, 219, 224, 0.2), 0px 8px 16px -8px rgba(1, 24, 48, 0.2);
@@ -13592,6 +13592,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .navbar-custom {
   list-style-type: none;
   margin: 0;
+}
+.navbar-custom a.nav-link {
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+.navbar-custom a.nav-link:hover {
+  background-color: rgba(42, 114, 199, 0.05);
+}
+.navbar-custom a.nav-link.nav-link-active {
+  color: var(--primary);
+  background-color: rgba(42, 114, 199, 0.05);
 }
 .navbar-custom.m-menu {
   width: 100%;
@@ -13637,7 +13649,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   float: right;
 }
 .navbar-custom li {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
+}
+
+.navbar-custom a.nav-link:hover {
+  background-color: rgba(42, 114, 199, 0.05);
 }
 
 .burger-menu {
@@ -14245,6 +14261,13 @@ body.freeze {
 .text-bg-ghost-success {
   background-color: var(--g100);
   color: var(--success);
+}
+
+.adjust-anchor {
+  position: relative;
+  padding-top: 64px;
+  margin-top: -64px;
+  overflow: hidden;
 }
 
 /* media querys */

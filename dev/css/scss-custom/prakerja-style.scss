@@ -105,6 +105,14 @@ body{
     color: var(--success)
   }
 
+.adjust-anchor{
+    position: relative;
+    padding-top: 64px;
+    margin-top: -64px;
+    overflow: hidden;
+    // outline: solid 1px red;
+}
+
 
 /* media querys */
 
