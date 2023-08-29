@@ -1,0 +1,69 @@
+.main-hero {
+  min-height: 99vh;
+  background-image: url("../img/main-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.main-hero::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 0;
+}
+.main-hero > .container {
+  position: relative;
+  z-index: 1;
+}
+.main-hero p, .main-hero h1 {
+  color: white;
+}
+
+.avatar {
+  width: 5.5rem !important;
+  height: 5.5rem;
+  border-radius: 3rem;
+  background-color: var(--bg-default);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 5.5rem;
+          flex: 0 0 5.5rem;
+  overflow: hidden;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.list-custom {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list-custom li {
+  border: solid 1px var(--border-default);
+  margin-top: -1px;
+}
+.list-custom li a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  padding: 1rem;
+  display: block;
+}
+.list-custom li a:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+/* media querys */
+@media (min-width: 992px) {
+  .list-custom {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+}

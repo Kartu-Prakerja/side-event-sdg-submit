@@ -1,0 +1,92 @@
+// Style 1
+.main-hero{
+    min-height: 99vh;
+    background-image: url('../img/main-bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, .5);
+        position: absolute;
+        z-index: 0;
+    }
+
+    > .container{
+        position: relative;
+        z-index: 1;
+    }
+    
+    p, h1{
+        color: white;
+    }
+}
+
+.avatar{
+    width: 5.5rem!important;
+    height: 5.5rem;
+    border-radius: 3rem;
+    background-color: var(--bg-default);
+    flex: 0 0 5.5rem;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.list-custom{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    // column-count: 2;
+    li{
+        
+        border: solid 1px var(--border-default);
+        margin-top: -1px;
+
+        a{
+            text-decoration: none;
+            color: var(--text-secondary);
+            padding: 1rem;
+            display: block;
+            &:hover{
+                text-decoration: underline;
+                color: var(--primary);
+            }
+        }
+    }
+}
+
+/* media querys */
+
+@media (min-width: 576px) { 
+   
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    .list-custom{
+        column-count: 2;
+    }
+
+    
+
+}
+
+@media (min-width: 1200px) { 
+    
+   
+}
