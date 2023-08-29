@@ -1,6 +1,6 @@
 .main-hero {
   min-height: 99vh;
-  background-image: url("../img/main-bg.jpeg");
+  background-image: url("../img/main-bg.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -31,6 +31,7 @@
       -ms-flex: 0 0 5.5rem;
           flex: 0 0 5.5rem;
   overflow: hidden;
+  border: solid 1px var(--border-default);
 }
 .avatar img {
   width: 100%;
