@@ -6,17 +6,16 @@
     z-index: 234;
     transition: 0.3s background-color;
 
-
-
-    .logo{
-      height: 32px;
-      width: 118px;
-      background-image: url('../img/logo-prakerja-white.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
 }
 
+.logo{
+  height: 32px;
+  width: 252px;
+  background-image: url('../img/logo-prakerja-sdg-white.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
 
 
 .header-fixed{
@@ -30,7 +29,7 @@
 
 
     .logo{
-      background-image: url('../img/logo-prakerja-colored.svg');
+      background-image: url('../img/logo-prakerja-sdg-colored.svg');
     }
 
     .burger-menu .icon {
@@ -135,7 +134,7 @@
     padding: 4px;
     // outline: solid 1px red;
     position: absolute;
-    top:.5rem;
+    top:.75rem;
     right: 1rem;
   }
   .burger-menu .icon {
@@ -178,9 +177,19 @@
     cursor: pointer;
   }
 
+  @media (min-width: 1300px) { 
+    .logo{
+      width: 310px;
+      // outline: solid 1px white;
+    }
+  }
 
 
   @media (min-width: 992px) { 
+
+    .logo{
+      width: 272px;
+    }
 
     .pdt-header{
       .nav-link{
